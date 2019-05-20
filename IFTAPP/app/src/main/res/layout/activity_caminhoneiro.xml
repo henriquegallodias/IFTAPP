@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/bgcaminhoneiro"
+        tools:context=".CaminhoneiroActivity">
+
+    <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+        <Button
+                android:text="Consultar Cargas"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="400dp"
+                android:layout_marginLeft="48dp"
+                android:layout_marginRight="48dp"
+                android:background="@color/bgadm"
+                android:textColor="@color/white"
+                android:textSize="30sp"
+                android:textAlignment="center"
+                android:id="@+id/btnconsucargas"/>
+        <Button
+                android:text="Sair"
+                android:background="@color/bgadm"
+                android:textAlignment="center"
+                android:textSize="30sp"
+                android:textColor="@color/white"
+                android:layout_marginRight="48dp"
+                android:layout_marginLeft="48dp"
+                android:layout_marginTop="36dp"
+                android:layout_marginBottom="48dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/btnsair"/>
+    </LinearLayout>
+</android.support.constraint.ConstraintLayout>
