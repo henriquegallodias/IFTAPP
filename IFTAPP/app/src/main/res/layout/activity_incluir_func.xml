@@ -5,6 +5,104 @@
         xmlns:app="http://schemas.android.com/apk/res-auto"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        android:background="@color/bgadm"
         tools:context=".IncluirFuncActivity">
 
+    <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+        <TextView
+                android:text="Cadastro de Funcionários"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:textColor="@color/white"
+                android:textSize="30sp"
+                android:textAlignment="center"
+                android:id="@+id/textView4"/>
+        <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textPersonName"
+                android:layout_marginTop="72dp"
+                android:layout_marginRight="48dp"
+                android:layout_marginLeft="48dp"
+                android:textAlignment="center"
+                android:textSize="20sp"
+                android:hint="Nome Completo"
+                android:textColorHint="@color/white"
+                android:textColor="@color/white"
+                android:text=""
+                android:ems="10"
+                android:id="@+id/edNome"/>
+        <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:layout_marginRight="48dp"
+                android:layout_marginLeft="48dp"
+                android:hint="Telefone"
+                android:textColorHint="@color/white"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                android:textAlignment="center"
+                android:inputType="phone"
+                android:ems="10"
+                android:id="@+id/edTel"/>
+        <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:layout_marginRight="48dp"
+                android:layout_marginLeft="48dp"
+                android:inputType="textPassword"
+                android:hint="Senha"
+                android:textAlignment="center"
+                android:textSize="20sp"
+                android:textColor="@color/white"
+                android:textColorHint="@color/white"
+                android:ems="10"
+                android:id="@+id/edSenha"/>
+        <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:layout_marginRight="48dp"
+                android:layout_marginLeft="48dp"
+                android:inputType="textEmailAddress"
+                android:hint="E-mail"
+                android:textColorHint="@color/white"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                android:textAlignment="center"
+                android:ems="10"
+                android:id="@+id/edEmail"/>
+        <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:layout_marginRight="48dp"
+                android:layout_marginLeft="48dp"
+                android:inputType="textPersonName"
+                android:textColor="@color/white"
+                android:textAlignment="center"
+                android:hint="Placa do Veículo"
+                android:textColorHint="@color/white"
+                android:textSize="20sp"
+                android:text=""
+                android:ems="10"
+                android:id="@+id/editText7"/>
+        <Button
+                android:text="Inserir"
+                android:layout_marginTop="36dp"
+                android:layout_marginLeft="48dp"
+                android:layout_marginRight="48dp"
+                android:background="@color/bgcaminhoneiro"
+                android:textSize="25sp"
+                android:textColor="@color/white"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/btninserirfunc"/>
+    </LinearLayout>
 </android.support.constraint.ConstraintLayout>

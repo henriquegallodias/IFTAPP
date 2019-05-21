@@ -8,34 +8,54 @@
         android:background="@color/bgcaminhoneiro"
         tools:context=".CaminhoneiroActivity">
 
-    <LinearLayout
-            android:orientation="vertical"
+    <ScrollView
             android:layout_width="match_parent"
+            android:fillViewport="true"
             android:layout_height="match_parent">
-        <Button
-                android:text="Consultar Cargas"
+
+        <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="400dp"
-                android:layout_marginLeft="48dp"
-                android:layout_marginRight="48dp"
-                android:background="@color/bgadm"
-                android:textColor="@color/white"
-                android:textSize="30sp"
-                android:textAlignment="center"
-                android:id="@+id/btnconsucargas"/>
-        <Button
-                android:text="Sair"
-                android:background="@color/bgadm"
-                android:textAlignment="center"
-                android:textSize="30sp"
-                android:textColor="@color/white"
-                android:layout_marginRight="48dp"
-                android:layout_marginLeft="48dp"
-                android:layout_marginTop="36dp"
-                android:layout_marginBottom="48dp"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:id="@+id/btnsair"/>
-    </LinearLayout>
+                android:orientation="vertical">
+
+            <TextView
+                    android:id="@+id/resultText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="16dp"
+                    android:text=""
+                    android:textSize="20sp"
+            />
+
+            <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                <Button
+                        android:id="@+id/btnconsucargas"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:text="Consulte"
+                        android:textSize="25sp"
+                        android:background="@color/bgadm"
+                        android:textColor="@color/white"
+                        android:textStyle="bold"
+                />
+                <Button
+                        android:text="Sair"
+                        android:background="@color/bgadm"
+                        android:textAlignment="center"
+                        android:textSize="25sp"
+                        android:layout_marginTop="500dp"
+                        android:textColor="@color/white"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/btnsair"
+                        android:textStyle="bold"
+                />
+            </RelativeLayout>
+
+        </LinearLayout>
+    </ScrollView>
 </android.support.constraint.ConstraintLayout>

@@ -6,75 +6,58 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:background="@color/bgadm"
-        tools:context=".IncluirCarga">
+        tools:context=".LoginAdmActivity">
 
     <LinearLayout
             android:orientation="vertical"
             android:layout_width="match_parent"
             android:layout_height="match_parent">
-        <TextView
-                android:text="Cadastro de Cargas"
+        <ImageView
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:textAlignment="center"
-                android:textSize="30sp"
-                android:layout_marginTop="24dp"
-                android:textColor="@color/white"
-                android:id="@+id/textView3"/>
+                android:layout_marginTop="48dp"
+                android:layout_marginRight="48dp"
+                android:layout_marginLeft="48dp"
+                android:layout_height="112dp" app:srcCompat="@mipmap/ic_launcher" android:id="@+id/imageView3"/>
         <EditText
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:inputType="textPersonName"
-                android:layout_marginTop="72dp"
-                android:layout_marginRight="48dp"
+                android:layout_marginTop="24dp"
                 android:layout_marginLeft="48dp"
-                android:hint="Informe o tipo de carga"
-                android:textAlignment="center"
+                android:layout_marginRight="48dp"
+                android:inputType="textPersonName"
                 android:textColor="@color/white"
-                android:textSize="20sp"
+                android:textSize="30sp"
+                android:textAlignment="center"
                 android:textColorHint="@color/white"
+                android:hint="Usuário"
                 android:text=""
                 android:ems="10"
-                android:id="@+id/edTypeCarga"/>
+                android:id="@+id/editText"/>
         <EditText
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:inputType="textPostalAddress"
+                android:layout_marginRight="48dp"
                 android:layout_marginTop="24dp"
                 android:layout_marginLeft="48dp"
-                android:layout_marginRight="48dp"
-                android:hint="Local de retirada"
+                android:hint="Senha"
                 android:textColorHint="@color/white"
-                android:textSize="20sp"
-                android:textColor="@color/white"
                 android:textAlignment="center"
-                android:ems="10"
-                android:id="@+id/edLocal"/>
-        <EditText
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:inputType="number"
-                android:layout_marginTop="24dp"
-                android:layout_marginRight="48dp"
-                android:layout_marginLeft="48dp"
-                android:textAlignment="center"
+                android:textSize="30sp"
                 android:textColor="@color/white"
-                android:textSize="20sp"
-                android:textColorHint="@color/white"
-                android:hint="Peso da carga"
+                android:inputType="textPassword"
                 android:ems="10"
-                android:id="@+id/edPeso"/>
+                android:id="@+id/editText2"/>
         <Button
-                android:text="Inserir"
+                android:text="Entrar"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_marginTop="36dp"
                 android:layout_marginLeft="48dp"
                 android:layout_marginRight="48dp"
-                android:layout_marginTop="36dp"
                 android:background="@color/bgcaminhoneiro"
                 android:textColor="@color/white"
-                android:textSize="25sp"
+                android:textSize="30sp"
                 android:textAlignment="center"
-                android:id="@+id/btninserir"/>
+                android:id="@+id/btnentraradm"/>
     </LinearLayout>
 </android.support.constraint.ConstraintLayout>

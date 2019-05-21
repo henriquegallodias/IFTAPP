@@ -27,8 +27,6 @@ class CaminhoneiroActivity : AppCompatActivity() {
             val intentsair = Intent(Intent.ACTION_MAIN)
             intentsair.addCategory(Intent.CATEGORY_HOME)
             intentsair.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK)
-
-            Toast.makeText(this@CaminhoneiroActivity,"Encerrado",Toast.LENGTH_LONG).show()
             startActivity(intentsair)
         }
     }
